@@ -1,0 +1,35 @@
+<li>
+  <div class="bootstrap-wysihtml5-insert-internal-link-modal modal fade">
+    <div class="modal-dialog {{#if options.smallmodals}}modal-sm{{/if}}">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">&times;</a>
+          <h3>{{locale.internal_links.insertInternal}}</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+             <div class="col-xs-12">
+              {{#each options.internalLinks}}
+                  <input type="radio" class="bootstrap-wysihtml5-insert-internal-link-url" name="internal-link" value="{{url}}"><span class="link-label"> {{label}} </span> (<span class="link-url">{{url}}</span>) <br>
+              {{else}}
+                  <span> {{locale.internal_links.noLinks}} </span>
+              {{/each}}
+              </div>
+          </div>
+          {{#if options.internalLinks.length}}
+                       <label class="checkbox"> <input type="checkbox" class="bootstrap-wysihtml5-insert-internal-link-target" checked>{{locale.link.target}}</label>
+          {{/if}}
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">{{locale.link.cancel}}</a>
+          {{#if options.internalLinks.length}}
+          <a href="#" class="btn btn-primary" data-dismiss="modal">{{locale.link.insert}}</a>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn {{#if options.size}}btn-{{options.size}}{{/if}} btn-default" data-wysihtml5-command="createInternalLink" title="{{locale.internal_links.insertInternal}}" tabindex="-1">
+    <span class="glyphicon glyphicon-share wysihtml5-internal-links"></span>
+  </a>
+</li>
