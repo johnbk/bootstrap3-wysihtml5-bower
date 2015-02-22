@@ -211,6 +211,96 @@ function program3(depth0,data) {
   return buffer;
   });
 
+this["wysihtml5"]["tpl"]["internal-links"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
+
+function program1(depth0,data) {
+  
+  
+  return "modal-sm";
+  }
+
+function program3(depth0,data) {
+  
+  var buffer = "", stack1, helper;
+  buffer += "\n                  <input type=\"radio\" class=\"bootstrap-wysihtml5-insert-internal-link-url\" name=\"internal-link\" value=\"";
+  if (helper = helpers.url) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.url); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + "\"><span class=\"link-label\"> ";
+  if (helper = helpers.label) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.label); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + " </span> (<span class=\"link-url\">";
+  if (helper = helpers.url) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.url); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + "</span>) <br>\n              ";
+  return buffer;
+  }
+
+function program5(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n                  <span> "
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.internal_links)),stack1 == null || stack1 === false ? stack1 : stack1.noLinks)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + " </span>\n              ";
+  return buffer;
+  }
+
+function program7(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n                       <label class=\"checkbox\"> <input type=\"checkbox\" class=\"bootstrap-wysihtml5-insert-internal-link-target\" checked>"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.target)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</label>\n          ";
+  return buffer;
+  }
+
+function program9(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n          <a href=\"#\" class=\"btn btn-primary\" data-dismiss=\"modal\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.insert)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</a>\n          ";
+  return buffer;
+  }
+
+function program11(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "btn-"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.size)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1));
+  return buffer;
+  }
+
+  buffer += "<li>\n  <div class=\"bootstrap-wysihtml5-insert-internal-link-modal modal fade\">\n    <div class=\"modal-dialog ";
+  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.smallmodals), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <a class=\"close\" data-dismiss=\"modal\">&times;</a>\n          <h3>"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.internal_links)),stack1 == null || stack1 === false ? stack1 : stack1.insertInternal)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</h3>\n        </div>\n        <div class=\"modal-body\">\n          <div class=\"row\">\n             <div class=\"col-xs-12\">\n              ";
+  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.internalLinks), {hash:{},inverse:self.program(5, program5, data),fn:self.program(3, program3, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n              </div>\n          </div>\n          ";
+  stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.internalLinks)),stack1 == null || stack1 === false ? stack1 : stack1.length), {hash:{},inverse:self.noop,fn:self.program(7, program7, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        </div>\n        <div class=\"modal-footer\">\n          <a class=\"btn btn-default\" data-dismiss=\"modal\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.cancel)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</a>\n          ";
+  stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.internalLinks)),stack1 == null || stack1 === false ? stack1 : stack1.length), {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n        </div>\n      </div>\n    </div>\n  </div>\n  <a class=\"btn ";
+  stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(11, program11, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " btn-default\" data-wysihtml5-command=\"createInternalLink\" title=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.internal_links)),stack1 == null || stack1 === false ? stack1 : stack1.insertInternal)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" tabindex=\"-1\">\n    <span class=\"glyphicon glyphicon-share wysihtml5-internal-links\"></span>\n  </a>\n</li>\n";
+  return buffer;
+  });
+
 this["wysihtml5"]["tpl"]["link"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
@@ -284,6 +374,24 @@ function program1(depth0,data) {
   buffer += " btn-default\" data-wysihtml5-command=\"Indent\" title=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.lists)),stack1 == null || stack1 === false ? stack1 : stack1.indent)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" tabindex=\"-1\"><span class=\"glyphicon glyphicon-indent-left\"></span></a>\n  </div>\n</li>\n";
+  return buffer;
+  });
+
+this["wysihtml5"]["tpl"]["text-align"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<li>\n    <div class='btn-group'>\n        <a class='btn btn-default' data-wysihtml5-command='justifyLeft' title='"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.text_align)),stack1 == null || stack1 === false ? stack1 : stack1.justifyLeft)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "' tabindex='-1'>\n            <span class='glyphicon glyphicon-align-left'> </span>\n        </a>\n        <a class='btn btn-default' data-wysihtml5-command='justifyCenter' title='"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.text_align)),stack1 == null || stack1 === false ? stack1 : stack1.justifyCenter)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "' tabindex='-1'>\n            <span class='glyphicon glyphicon-align-center'> </span>\n        </a>\n        <a class='btn btn-default' data-wysihtml5-command='justifyRight' title='"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.text_align)),stack1 == null || stack1 === false ? stack1 : stack1.justifyRight)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "' tabindex='-1'>\n            <span class='glyphicon glyphicon-align-right'> </span>\n        </a>\n        <a class='btn btn-default' data-wysihtml5-command='justifyFull' title='"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.text_align)),stack1 == null || stack1 === false ? stack1 : stack1.justify)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "' tabindex='-1'>\n            <span class='glyphicon glyphicon-align-justify'> </span>\n        </a>\n    </div>\n</li>\n";
   return buffer;
   });
 

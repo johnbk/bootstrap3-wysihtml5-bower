@@ -114,3 +114,26 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
 .glyphicon-quote:after {
   content: "\0000a0";
 }
+
+input[type=radio].bootstrap-wysihtml5-insert-internal-link-url {
+  margin-right: 5px;
+}
+
+.bootstrap-wysihtml5-insert-internal-link-modal label.checkbox {
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+.bootstrap-wysihtml5-insert-internal-link-modal .link-url {
+  color: blue;
+  font-family: monospace;
+}
+
+.glyphicon-share.wysihtml5-internal-links {
+   -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
