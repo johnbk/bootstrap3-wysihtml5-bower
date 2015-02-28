@@ -247,8 +247,7 @@
                 self.editor.composer.commands.exec('createLink', {
                     'href': url,
                     'target': (newWindow ? '_blank' :
-                        '_self'),
-                    'rel': (newWindow ? 'nofollow' : '')
+                        '_self')
                 });
             };
             var pressedEnter = false;
@@ -325,8 +324,7 @@
                 self.editor.composer.commands.exec('createLink', {
                     'href': url,
                     'target': (newWindow ? '_blank' :
-                        '_self'),
-                    'rel': (newWindow ? 'nofollow' : '')
+                        '_self')
                 });
             };
 
@@ -492,8 +490,7 @@
                         'href': 'url' // important to avoid XSS
                     },
                     'set_attributes': {
-                        'target': '_blank',
-                        'rel': 'nofollow'
+                        'target': '_blank'
                     }
                 },
                 'span': 1,

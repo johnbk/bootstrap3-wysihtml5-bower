@@ -253,7 +253,7 @@ function program5(depth0,data) {
 function program7(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n                       <label class=\"checkbox\"> <input type=\"checkbox\" class=\"bootstrap-wysihtml5-insert-internal-link-target\" checked>"
+  buffer += "\n                       <label class=\"checkbox\"> <input type=\"checkbox\" class=\"bootstrap-wysihtml5-insert-internal-link-target\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.target)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "</label>\n          ";
   return buffer;
@@ -325,7 +325,7 @@ function program3(depth0,data) {
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <a class=\"close\" data-dismiss=\"modal\">&times;</a>\n          <h3>"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.insert)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</h3>\n        </div>\n        <div class=\"modal-body\">\n          <input value=\"http://\" class=\"bootstrap-wysihtml5-insert-link-url form-control\">\n          <label class=\"checkbox\"> <input type=\"checkbox\" class=\"bootstrap-wysihtml5-insert-link-target\" checked>"
+    + "</h3>\n        </div>\n        <div class=\"modal-body\">\n          <input value=\"http://\" class=\"bootstrap-wysihtml5-insert-link-url form-control\">\n          <label class=\"checkbox\"> <input type=\"checkbox\" class=\"bootstrap-wysihtml5-insert-link-target\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.target)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "</label>\n        </div>\n        <div class=\"modal-footer\">\n          <a class=\"btn btn-default\" data-dismiss=\"modal\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.link)),stack1 == null || stack1 === false ? stack1 : stack1.cancel)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
